@@ -1,0 +1,1 @@
+SELECT "movies"."id", "movies"."title" FROM "movies" INNER JOIN "castings" ON "castings"."movie_id" = "movies"."id" INNER JOIN "actors" ON "actors"."id" = "castings"."actor_id" WHERE "actors"."name" = 'Harrison Ford' AND ("castings"."ord" != 1);
